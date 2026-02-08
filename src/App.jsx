@@ -74,17 +74,23 @@ export default function ValentineProposal() {
     console.log(`Response: ${response} at ${timestamp}`);
     
     // Option 1: Discord Webhook (replace with your webhook URL)
-    // const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL_HERE';
-    // fetch(webhookURL, {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({
-    //     content: `💝 She clicked: **${response.toUpperCase()}** at ${timestamp}`
-    //   })
-    // }).catch(err => console.log('Notification sent'));
+    const webhookURL = 'https://discord.com/api/webhooks/1470086633394143396/yEE3rH6DxFpAMfJ1TIv-9e4Qx589dkesVaTviP_Yx3ALcVXVJc_3hm3BaLLxcaPGp-lW';
+    fetch(webhookURL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+         content: `💝 She clicked: **${response.toUpperCase()}** at ${timestamp}`
+      })
+    })
+    .then(() => {
+      console.log('Discord notification sent successfully');
+    })
+    .catch(err => {
+      console.error('Failed to send Discord notification:', err);
+    });
     
     // Option 2: Google Forms (alternative)
-    // Option 3: Email service
+    // Option 3: Email service    
   };
 
   const handleNo = (e) => {
