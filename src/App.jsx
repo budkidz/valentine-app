@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Heart, Sparkles } from 'lucide-react';
+import photo1 from './assets/photos/photo-1.JPG';
+import photo2 from './assets/photos/photo-2.JPG';
+import photo3 from './assets/photos/photo-3.JPG';
+import photo4 from './assets/photos/photo-4.JPG';
+import photo5 from './assets/photos/photo-5.JPG';
+import photo6 from './assets/photos/photo-6.JPG';
 
 export default function ValentineProposal() {
   const [revealed, setRevealed] = useState(false);
@@ -7,14 +13,13 @@ export default function ValentineProposal() {
   const [hearts, setHearts] = useState([]);
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-  // Replace these URLs with your actual photos
   const photos = [
-    'src/assets/photos/photo-1.JPG',
-    'src/assets/photos/photo-2.JPG',
-    'src/assets/photos/photo-3.JPG',
-    'src/assets/photos/photo-4.JPG',
-    'src/assets/photos/photo-5.JPG',
-    'src/assets/photos/photo-6.JPG',
+    photo1,
+    photo2,
+    photo3,
+    photo4,
+    photo5,
+    photo6,
   ];
 
   const memories = [
