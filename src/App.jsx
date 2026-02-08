@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Heart, Sparkles } from 'lucide-react';
-import photo1 from './assets/photos/photo-1.JPG';
-import photo2 from './assets/photos/photo-2.JPG';
-import photo3 from './assets/photos/photo-3.JPG';
-import photo4 from './assets/photos/photo-4.JPG';
-import photo5 from './assets/photos/photo-5.JPG';
-import photo6 from './assets/photos/photo-6.JPG';
+import photo1 from './assets/photos/photo-1.jpg';
+import photo2 from './assets/photos/photo-2.jpg';
+import photo3 from './assets/photos/photo-3.jpg';
+import photo4 from './assets/photos/photo-4.jpg';
+import photo5 from './assets/photos/photo-5.jpg';
+import photo6 from './assets/photos/photo-6.jpg';
 
 export default function ValentineProposal() {
   const [revealed, setRevealed] = useState(false);
